@@ -28,8 +28,9 @@
 #define GAMING 1
 #define COLEMAK 2
 #define NUMPAD 3
-#define MAGIC 4
-#define FACTORY_TEST 5
+#define LOWER 4
+#define MAGIC 5
+#define FACTORY_TEST 6
 
 / {
     behaviors {
@@ -190,6 +191,17 @@
             >;
         };
 
+        lower_layer {
+            bindings = <
+            &kp C_BRI_DN      &kp C_BRI_UP        &kp C_PREV      &kp C_NEXT      &kp C_PP                                                                                                           &kp C_MUTE     &kp C_VOL_DN   &kp C_VOL_UP    &none           &kp PAUSE_BREAK
+            &trans            &none               &none           &none           &none           &kp HOME                                                                              &kp LPAR     &trans         &trans         &trans          &trans          &kp PSCRN
+            &trans            &none               &none           &kp UP          &none           &kp END                                                                               &kp RPAR     &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &trans          &kp SLCK
+            &trans            &none               &kp LEFT        &kp DOWN        &kp RIGHT       &kp PG_UP                                                                             &kp PRCNT    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp KP_PLUS     &none
+            &trans            &kp K_CMENU         &none           &kp F11         &kp F12         &kp PG_DN       &trans      &trans      &to DEFAULT &tog 1      &trans      &trans    &kp COMMA    &trans         &trans         &trans          &kp KP_ENTER    &trans
+            &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &trans      &trans      &trans      &tog 2      &kp LBKT    &kp RBKT               &trans         &trans         &trans          &trans          &trans
+            >;
+        };
+
         magic_layer {
             bindings = <
             &bt BT_CLR        &none               &none           &none           &none                                                                                                           &none      &none      &none      &none      &bt BT_CLR_ALL
@@ -215,14 +227,4 @@
 };
 
 /*
-        lower_layer {
-            bindings = <
-            &kp C_BRI_DN      &kp C_BRI_UP        &kp C_PREV      &kp C_NEXT      &kp C_PP                                                                                                           &kp C_MUTE     &kp C_VOL_DN   &kp C_VOL_UP    &none           &kp PAUSE_BREAK
-            &trans            &none               &none           &none           &none           &kp HOME                                                                              &kp LPAR     &trans         &trans         &trans          &trans          &kp PSCRN
-            &trans            &none               &none           &kp UP          &none           &kp END                                                                               &kp RPAR     &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &trans          &kp SLCK
-            &trans            &none               &kp LEFT        &kp DOWN        &kp RIGHT       &kp PG_UP                                                                             &kp PRCNT    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp KP_PLUS     &none
-            &trans            &kp K_CMENU         &none           &kp F11         &kp F12         &kp PG_DN       &trans      &trans      &to DEFAULT &tog 1      &trans      &trans    &kp COMMA    &trans         &trans         &trans          &kp KP_ENTER    &trans
-            &trans            &kp CAPS            &kp INS         &kp F11         &kp F12                         &trans      &trans      &trans      &tog 2      &kp LBKT    &kp RBKT               &trans         &trans         &trans          &trans          &trans
-            >;
-        };
 */
