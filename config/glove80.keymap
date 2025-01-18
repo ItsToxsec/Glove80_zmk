@@ -25,7 +25,7 @@
 #define HYPER LC(LS(LG(LALT)))
 
 // layers
-#define COLEMAK 0
+#define DEFAULT 0
 #define GAMING 1
 #define QWERTY 2
 #define DVORAK 3
@@ -126,7 +126,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak_layer {
+        default_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
             // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
@@ -159,7 +159,7 @@
             &kp T          &kp TAB   &kp Q   &kp W     &kp E      &mt TAB R                                                                    &kp Y   &kp U        &kp I        &kp O       &kp P       &kp BSLH
             &kp G          &kp CAPS  &kp A   &kp S     &kp D      &kp F                                                                        &kp H   &htp RSHFT J &htp RCTRL K &kp L       &kp SEMI    &kp SQT
             &kp GRAVE      &kp Z     &kp X   &kp C     &kp V      &kp B   &kp LSHFT   &kp LCTRL   &kp CAPS   &kp LGUI    &kp RCTRL &kp RSHFT   &kp N   &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
-            &magic MAGIC 0 &kp HOME &kp END  &kp N5    &kp N6             &kp SPACE   &kp LCTRL   &kp LALT   &to COLEMAK &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
+            &magic MAGIC 0 &kp HOME &kp END  &kp N5    &kp N6             &kp SPACE   &kp LCTRL   &kp LALT   &to DEFAULT &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
         qwerty_layer {
