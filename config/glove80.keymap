@@ -26,12 +26,13 @@
 
 // layers
 #define DEFAULT 0
-#define GAMING 1
-#define QWERTY 2
-#define DVORAK 3
-#define LOWER 4 
-#define MAGIC 5
-#define FACTORY_TEST 6
+#define GAMING  1
+#define NUM     2
+#define SYM     3
+#define NAV     4
+#define MED     5 
+#define MAGIC   6
+#define FACTORY_TEST 7
 
 / {
     behaviors {
@@ -57,13 +58,13 @@
             delay-ms = <0>;                   //   10
         };
 
-        htp: holdtap_tappreferred {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_TAP_PREFERRED";
+            label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
 
@@ -136,12 +137,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-            &kp F1         &kp F2   &kp F3    &kp F4        &kp F5                                                                                          &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
-            &kp EQUAL      &kp N1   &kp N2    &kp N3        &kp N4       &kp N5                                                                     &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
-            &kp ESC        &kp Q    &kp W     &kp F         &kp P        &kp B                                                                      &kp J   &kp L        &kp U        &kp Y       &kp SEMI    &kp BSLH
-            &kp TAB        &kp A    &kp R     &htp LCTRL S  &htp LSHFT T &kp G                                                                      &kp M   &htp RSHFT N &htp RCTRL E &kp I       &kp O       &kp SQT
-            &kp GRAVE      &kp Z    &kp X     &kp C         &kp D        &kp V   &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp K   &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
-            &magic MAGIC 0 &kp HOME &kp END   &kp LEFT      &kp RIGHT            &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
+            &kp F1         &kp F2     &kp F3     &kp F4        &kp F5                                                                                             &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
+            &kp EQUAL      &kp N1     &kp N2     &kp N3        &kp N4       &kp N5                                                                        &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
+            &kp ESC        &kp Q      &kp W      &kp F         &kp P        &kp B                                                                         &kp J   &kp L        &kp U        &kp Y       &kp SEMI    &kp BSLH
+            &kp TAB        &hm LGIU A &hm LALT R &hm LCTRL S   &hm LSHFT T  &kp G                                                                         &kp M   &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O  &kp SQT
+            &kp GRAVE      &kp Z      &kp X      &kp C         &kp D        &kp V   &kp LSHFT    &kp LCTRL     &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp K   &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
+            &magic MAGIC 0 &kp HOME   &kp END    &kp LEFT      &kp RIGHT            &lt MED DEL  &lt NAV BSPC  &kp LALT   &kp RALT  &lt NUM RET &lt SYM SPACE    &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
         gaming_layer {
@@ -162,7 +163,7 @@
             &magic MAGIC 0 &kp HOME &kp END  &kp N5    &kp N6             &kp SPACE   &kp LCTRL   &kp LALT   &to DEFAULT &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
-        qwerty_layer {
+        num_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
             // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
@@ -172,15 +173,51 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-            &kp F1         &kp F2   &kp F3    &kp F4        &kp F5                                                                                          &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
-            &kp EQUAL      &kp N1   &kp N2    &kp N3        &kp N4       &kp N5                                                                     &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
-            &kp ESC        &kp Q    &kp W     &kp E         &kp R        &kp T                                                                      &kp Y   &kp U        &kp I        &kp O       &kp P       &kp BSLH
-            &kp TAB        &kp A    &kp S     &htp LCTRL D  &htp LSHFT F &kp G                                                                      &kp H   &htp RSHFT J &htp RCTRL K &kp L       &kp SEMI    &kp SQT
-            &kp GRAVE      &kp Z    &kp X     &kp C         &kp V        &kp B   &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp N   &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
-            &magic MAGIC 0 &kp HOME &kp END   &kp LEFT      &kp RIGHT            &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
+            &none  &none       &none       &none       &none                                                                                &none    &none    &none     &none      &none
+            &none  &none       &none       &none       &none      &none                                                          &none      &none    &none    &none     &none      &none
+            &none  &kp LBRC    &kp F7      &kp F8      &kp F9     &kp RBRC                                                       &kp LBKT   &kp N7   &kp N8   &kp N9    &kp RBKT   &none
+            &none  &kp COLON   &kp F4      &kp F5      &kp F6     &kp PLUS                                                       &kp EQUAL  &kp N4   &kp N5   &kp N6    &kp SEMI   &none
+            &none  &kp TILDE   &kp F1      &kp F2      &kp F3     &kp LALT &none      &none     &none  &none  &none   &none      &kp BSLH   &kp N1   &kp N2   &kp N3    &kp TILDE  &none
+            &none  &none       &none       &none       &none               &kp LPAR   &kp RPAR  &none  &none  &trans  &kp N0                &none    &none    &none     &none      &none
             >;
         };
-        dvorak_layer {
+        sym_layer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
+            // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
+            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
+            // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
+            // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
+            // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+
+            bindings = <
+            &none  &none       &none       &none       &none                                                                   &none      &none       &none     &none     &none
+            &none  &none       &none       &none       &none      &none                                              &none     &none      &none       &none     &none     &none
+            &none  &kp ESC     &kp LBKT    &kp RBKT    &kp LBRC   &kp RBRC                                           &kp TILDE &kp AMPS   &kp ASTRK   &kp EQUAL &kp PLUS  &none
+            &none  &kp COLON   &kp LCTRL   &kp LALT    &kp LSHFT  &kp PLUS                                           &kp GRAVE &kp DOLLAR &kp PERCENT &kp CARET &kp SEMI  &none
+            &none  &kp TILDE   &kp MINUS   &kp UNDER   &kp F3     &kp SQT  &none  &none  &none  &none  &none  &none  &kp DQT   &kp EXCL   &kp AT      &kp HASH  &kp BSLH  &none
+            &none  &none       &none       &none       &none               &none  &none  &none  &none  &none  &trans           &none      &none       &none     &none     &none
+            >;
+        };
+        nav_layer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
+            // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
+            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
+            // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
+            // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
+            // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+
+            bindings = <
+            &none  &none  &none  &none  &none                                                                &none     &none     &none      &none  &none
+            &none  &none  &none  &none  &none  &none                                              &none      &none     &none     &none      &none  &none
+            &none  &none  &none  &none  &none  &none                                              &none      &none     &none     &none      &none  &none
+            &none  &none  &none  &none  &none  &none                                              &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
+            &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none    &kp END    &none     &none     &none      &none  &none
+            &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &kp TAB             &none     &none     &none      &none  &none
+            >;
+        };
+        med_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
             // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
