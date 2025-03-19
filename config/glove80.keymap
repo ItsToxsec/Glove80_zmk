@@ -30,7 +30,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo LOWER>, <&to LOWER>;
+            bindings = <&mo SYM>, <&to SYM>;
         };
 
         hm: homerow_mods {
