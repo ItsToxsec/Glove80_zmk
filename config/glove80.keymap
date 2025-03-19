@@ -22,7 +22,6 @@
 #define NAV     4
 #define MED     5 
 #define MAGIC   6
-#define FACTORY_TEST 7
 
 / {
     behaviors {
