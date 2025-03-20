@@ -118,7 +118,7 @@
             &kp ESC        &kp Q      &kp W      &kp F         &kp P        &kp B                                                                         &kp J   &kp L        &kp U        &kp Y       &kp SEMI    &kp BSLH
             &kp TAB        &hm LGUI A &hm LALT R &hm LCTRL S   &hm LSHFT T  &kp G                                                                         &kp M   &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O  &kp SQT
             &kp GRAVE      &kp Z      &kp X      &kp C         &kp D        &kp V   &kp LSHFT    &kp LCTRL     &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp K   &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
-            &magic MAG 0   &kp HOME   &kp END    &kp LEFT      &kp RIGHT            &lt MAG DEL  &lt NAV BSPC  &kp LALT   &kp RALT  &lt NUM RET &lt SYM SPACE    &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
+            &magic MAG 0   &kp HOME   &kp END    &kp LEFT      &kp RIGHT            &lt MAG BSPC &lt NAV DEL   &kp LALT   &kp RALT  &lt NUM RET &lt SYM SPACE    &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
         gaming_layer {
