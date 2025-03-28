@@ -209,7 +209,7 @@
             &kp ESC        &kp SQT  &kp COMMA &kp DOT       &kp P        &kp Y                                                                      &kp F   &kp G        &kp C        &kp R       &kp L       &kp FSLH
             &kp TAB        &kp A    &kp O     &mt LCTRL E   &mt LSHFT U  &kp I                                                                      &kp D   &mt RSHFT H  &mt RCTRL T  &kp N       &kp S       &kp MINUS
             &kp GRAVE      &kp SEMI &kp Q     &kp J         &kp K        &kp X   &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp B   &kp M        &kp W        &kp V       &kp Z       &kp PG_UP
-            &tog 4         &kp HOME &kp END   &kp LEFT      &kp RIGmt            &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
+            &tog 4         &kp HOME &kp END   &kp LEFT      &kp RIGHT            &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
         lower_layer {
