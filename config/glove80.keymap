@@ -1,6 +1,6 @@
 
 /*
- * Copyrigmt (c) 2020 The ZMK Contributors
+ * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
@@ -117,7 +117,7 @@
             &kp F1         &kp F2     &kp F3     &kp F4        &kp F5                                                                                             &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
             &kp EQUAL      &kp N1     &kp N2     &kp N3        &kp N4       &kp N5                                                                        &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
             &kp ESC        &kp Q      &kp W      &kp F         &kp P        &kp B                                                                         &kp J   &kp L        &kp U        &kp Y       &kp SEMI    &kp BSLH
-            &kp TAB        &mt LGUI A &mt LALT R &mt LCTRL S   &mt LSHFT T  &kp G                                                                         &kp M   &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O  &kp SQT
+            &kp TAB        &ht LGUI A &ht LALT R &ht LCTRL S   &ht LSHFT T  &kp G                                                                         &kp M   &ht RSHFT N  &ht RCTRL E  &ht RALT I  &ht RGUI O  &kp SQT
             &kp GRAVE      &kp Z      &kp X      &kp C         &kp D        &kp V   &kp LSHFT    &kp LCTRL     &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp K   &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
             &magic MAG 0   &kp HOME   &kp END    &kp LEFT      &kp RIGHT            &lt MAG BSPC &lt NAV DEL   &kp LALT   &kp RALT  &lt NUM RET &lt SYM SPACE    &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
@@ -129,13 +129,13 @@
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
             // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
             // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
-            // | MAGIC | HOME| END | LEFT | RIGmt|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+            // | MAGIC | HOME| END | LEFT | RIGht|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
             &kp F1         &kp F2    &kp F3  &kp F4    &kp F5                                                                                          &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
             &kp N5         &kp ESC   &kp N1  &kp N2    &kp N3     &kp N4                                                                       &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
-            &kp T          &kp TAB   &kp Q   &kp W     &kp E      &mt TAB R                                                                    &kp Y   &kp U        &kp I        &kp O       &kp P       &kp BSLH
-            &kp G          &kp CAPS  &kp A   &kp S     &kp D      &kp F                                                                        &kp H   &mt RSHFT J  &mt RCTRL K  &kp L       &kp SEMI    &kp SQT
+            &kp T          &kp TAB   &kp Q   &kp W     &kp E      &ht TAB R                                                                    &kp Y   &kp U        &kp I        &kp O       &kp P       &kp BSLH
+            &kp G          &kp CAPS  &kp A   &kp S     &kp D      &kp F                                                                        &kp H   &ht RSHFT J  &ht RCTRL K  &kp L       &kp SEMI    &kp SQT
             &kp GRAVE      &kp Z     &kp X   &kp C     &kp V      &kp B   &kp LSHFT   &kp LCTRL   &kp CAPS   &kp LGUI    &kp RCTRL &kp RSHFT   &kp N   &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
             &magic MAG 0   &kp HOME &kp END  &kp N5    &kp N6             &kp SPACE   &kp LCTRL   &kp LALT   &to DEFAULT &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
@@ -147,7 +147,7 @@
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
             // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
             // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
-            // | MAGIC | HOME| END | LEFT | RIGmt|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+            // | MAGIC | HOME| END | LEFT | RIGht|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
             &none  &none       &none       &none       &none                                                                                &none    &none    &none     &none      &none
@@ -165,7 +165,7 @@
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
             // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
             // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
-            // | MAGIC | HOME| END | LEFT | RIGmt|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+            // | MAGIC | HOME| END | LEFT | RIGht|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
             &none  &none       &none       &none       &none                                                                   &none      &none       &none     &none     &none
@@ -183,7 +183,7 @@
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
             // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
             // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
-            // | MAGIC | HOME| END | LEFT | RIGmt|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+            // | MAGIC | HOME| END | LEFT | RIGht|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <  
             &none  &none  &none  &none  &none                                                                   &none     &none     &none      &none  &none
@@ -201,13 +201,13 @@
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
             // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
             // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
-            // | MAGIC | HOME| END | LEFT | RIGmt|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+            // | MAGIC | HOME| END | LEFT | RIGht|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
             &kp F1         &kp F2   &kp F3    &kp F4        &kp F5                                                                                          &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
             &kp EQUAL      &kp N1   &kp N2    &kp N3        &kp N4       &kp N5                                                                     &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
             &kp ESC        &kp SQT  &kp COMMA &kp DOT       &kp P        &kp Y                                                                      &kp F   &kp G        &kp C        &kp R       &kp L       &kp FSLH
-            &kp TAB        &kp A    &kp O     &mt LCTRL E   &mt LSHFT U  &kp I                                                                      &kp D   &mt RSHFT H  &mt RCTRL T  &kp N       &kp S       &kp MINUS
+            &kp TAB        &kp A    &kp O     &ht LCTRL E   &ht LSHFT U  &kp I                                                                      &kp D   &ht RSHFT H  &ht RCTRL T  &kp N       &kp S       &kp MINUS
             &kp GRAVE      &kp SEMI &kp Q     &kp J         &kp K        &kp X   &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp B   &kp M        &kp W        &kp V       &kp Z       &kp PG_UP
             &tog 4         &kp HOME &kp END   &kp LEFT      &kp RIGHT            &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
