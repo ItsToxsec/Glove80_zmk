@@ -150,12 +150,12 @@
             // | MAGIC | HOME| END | LEFT | RIGht|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-            &none  &none       &none       &none       &none                                                                                &none    &none    &none     &none      &none
-            &none  &none       &none       &none       &none      &none                                                          &none      &none    &none    &none     &none      &none
-            &none  &kp LBRC    &kp F7      &kp F8      &kp F9     &kp RBRC                                                       &kp LBKT   &kp N7   &kp N8   &kp N9    &kp RBKT   &none
-            &none  &kp COLON   &kp F4      &kp F5      &kp F6     &kp PLUS                                                       &kp EQUAL  &kp N4   &kp N5   &kp N6    &kp SEMI   &none
-            &none  &kp TILDE   &kp F1      &kp F2      &kp F3     &kp LALT &none      &none     &none  &none  &none   &none      &kp BSLH   &kp N1   &kp N2   &kp N3    &kp TILDE  &none
-            &none  &none       &none       &none       &none               &kp LPAR   &kp RPAR  &none  &none  &trans  &kp N0                &none    &none    &none     &none      &none
+            &none  &none       &none       &none       &none                                                                              &none    &none    &none     &none      &none
+            &none  &none       &none       &none       &none      &none                                                        &none      &none    &none    &none     &none      &none
+            &none  &kp LBRC    &kp F7      &kp F8      &kp F9     &kp RBRC                                                     &kp LBKT   &kp N7   &kp N8   &kp N9    &kp RBKT   &none
+            &none  &kp COLON   &kp F4      &kp F5      &kp F6     &kp PLUS                                                     &kp EQUAL  &kp N4   &kp N5   &kp N6    &kp SEMI   &none
+            &none  &kp TILDE   &kp F1      &kp F2      &kp F3     &kp LALT &none      &none     &none     &none  &none   &none &kp BSLH   &kp N1   &kp N2   &kp N3    &kp TILDE  &none
+            &none  &none       &none       &none       &none               &kp LPAR   &kp RPAR  &none     &none  &trans  &none            &none    &kp N0   &none     &none      &none
             >;
         };
         sym_layer {
