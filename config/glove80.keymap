@@ -45,8 +45,8 @@
             bindings = <&kp>, <&kp>;
         };
 
-        gt: hold_tap {
-            label = "hold_tap";
+        gt: gaming_tap {
+            label = "gaming_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
