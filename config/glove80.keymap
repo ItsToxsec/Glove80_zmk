@@ -130,7 +130,7 @@
             &kp ESC        &kp Q      &kp W      &kp F         &kp P        &kp B                                                                             &kp J   &kp L        &kp U        &kp Y       &kp SEMI    &kp BSLH
             &kp TAB        &ht LGUI A &ht LALT R &ht LCTRL S   &ht LSHFT T  &kp G                                                                             &kp M   &ht RSHFT N  &ht RCTRL E  &ht RALT I  &ht RGUI O  &kp SQT
             &kp GRAVE      &kp Z      &kp X      &kp C         &kp D        &kp V   &kp LSHFT    &kp LCTRL     &layer_td  &kp LGUI  &kp RCTRL   &kp RSHFT     &kp K   &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
-            &magic MAG 0   &kp HOME   &kp END    &kp LEFT      &kp RIGHT            &lt MAG BSPC &lt NAV DEL   &kp LALT   &kp RALT  &lt NUM RET &lt SYM SPACE         &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
+            &magic MAG 0   &kp HOME   &kp END    &kp LEFT      &kp RIGHT            &lt MED BSPC &lt NAV DEL   &kp LALT   &kp RALT  &lt NUM RET &lt SYM SPACE         &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
         gaming_layer {
@@ -215,12 +215,12 @@
             // | MAGIC | HOME| END | LEFT | RIGht|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-            &kp F1         &kp F2   &kp F3    &kp F4        &kp F5                                                                                          &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
-            &kp EQUAL      &kp N1   &kp N2    &kp N3        &kp N4       &kp N5                                                                     &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
-            &kp ESC        &kp SQT  &kp COMMA &kp DOT       &kp P        &kp Y                                                                      &kp F   &kp G        &kp C        &kp R       &kp L       &kp FSLH
-            &kp TAB        &kp A    &kp O     &ht LCTRL E   &ht LSHFT U  &kp I                                                                      &kp D   &ht RSHFT H  &ht RCTRL T  &kp N       &kp S       &kp MINUS
-            &kp GRAVE      &kp SEMI &kp Q     &kp J         &kp K        &kp X   &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp B   &kp M        &kp W        &kp V       &kp Z       &kp PG_UP
-            &tog 4         &kp HOME &kp END   &kp LEFT      &kp RIGHT            &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
+            &kp F1      &kp F2      &kp F3    &kp F4     &kp F5                                                                                                &kp F6        &kp F7        &kp F8        &kp F9           &kp F10
+            &kp EQUAL   &kp N1      &kp N2    &kp N3     &kp N4     &kp N5                                                                       &kp N6        &kp N7        &kp N8        &kp N9        &kp N0           &kp MINUS
+            &kp ESC     &sys_reset  &none     &none      &none      &bootloader                                                                  &bootloader   &to ALT       &to BASE      &none         &sys_reset       &kp FSLH
+            &kp TAB     &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT  &out OUT_USB                                                                 &out OUT_BLE  &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT       &kp MINUS
+            &kp GRAVE   &none       &none     &none      &none      &bt BT_CLR    &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp C_STOP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &kp PG_UP
+            &tog 4      &kp HOME    &kp END   &kp LEFT   &kp RIGHT                &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE                 &kp UP        &kp DOWN      &kp LBKT      &kp RBKT         &kp PG_DN
             >;
         };
         lower_layer {
