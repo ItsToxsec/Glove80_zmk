@@ -16,7 +16,7 @@
 
 // layers
 #define DEFAULT 0
-#defien ALT     1
+#define ALT     1
 #define GAMING  2
 #define NUM     3
 #define SYM     4
