@@ -186,7 +186,7 @@
             &kp H          &kp T     &kp Q   &kp W     &kp E      &gt TAB R                                                                    &kp Y   &kp U        &kp I        &kp O       &kp P       &kp BSLH
             &kp L          &kp M     &kp A   &kp S     &kp D      &kp F                                                                        &kp H   &ht RSHFT J  &ht RCTRL K  &kp L       &kp SEMI    &kp SQT
             &kp GRAVE      &kp B     &kp Z   &kp X     &kp C      &kp V   &kp LSHFT   &kp LCTRL   &kp CAPS   &kp LGUI    &kp RCTRL &kp RSHFT   &kp N   &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
-            &magic MAG 0   &kp HOME &kp END  &kp N5    &kp N6             &kp SPACE   &kp LCTRL   &kp LALT   &to DEFAULT &kp RET   &kp SPACE           &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
+            &magic MAG 0   &kp HOME &kp END  &kp N5    &kp N6             &kp SPACE   &kp LCTRL   &kp LALT   &to DEFAULT &kp RET   &kp SPACE           &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT   &kp PG_DN
             >;
         };
         num_layer {
