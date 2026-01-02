@@ -142,6 +142,12 @@
             key-positions = <47 48>;
             layers = <0 2 1>;
         };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <70 73>;
+            layers = <0 1 2>;
+        };
     };
 
     keymap {
