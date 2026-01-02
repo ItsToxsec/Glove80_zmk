@@ -109,22 +109,38 @@
 
         combo_lshft {
             bindings = <&kp LSHFT>;
-            key-positions = <37 38>;
+            key-positions = <50 49>;
+            layers = <0 1 2>;
         };
 
         combo_rshft {
             bindings = <&kp RSHFT>;
-            key-positions = <41 42>;
+            key-positions = <60 59>;
+            layers = <0 1 2>;
         };
 
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <23 24>;
+            layers = <0 1 2>;
         };
 
         kp_dash {
             bindings = <&kp MINUS>;
             key-positions = <31 32>;
+            layers = <0 1 2>;
+        };
+
+        combo_rsuper {
+            bindings = <&kp RGUI>;
+            key-positions = <62 61>;
+            layers = <0 1 2>;
+        };
+
+        combo_lgui {
+            bindings = <&kp LGUI>;
+            key-positions = <47 48>;
+            layers = <0 2 1>;
         };
     };
 
