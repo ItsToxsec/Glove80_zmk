@@ -166,7 +166,7 @@
 &kp EQUAL    &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                                                                             &kp N6       &kp N7       &kp N8      &kp N9      &kp N0      &kp MINUS
 &kp ESC      &kp X       &kp Q       &kp M        &kp W        &kp V                                                                              &kp J        &kp F        &kp FSLH    &kp SEMI    &kp DOT     &kp BSLH
 &kp TAB      &ht LGUI N  &ht LALT R  &ht LCTRL T  &ht LSHFT S  &kp G                                                                              &kp P        &ht RSHFT H  &ht RCTRL A &ht RALT E  &ht LGUI I  &kp SQT
-&kp GRAVE    &kp B       &kp L       &kp D        &kp D        &kp Z   &kp LSHFT     &kp LCTRL    &layer_td  &kp LGUI  &kp RCTRL    &kp RSHFT     &kp K        &kp Y        &kp O       &kp U       &kp COMMA   &kp PG_UP
+&kp GRAVE    &kp B       &kp L       &kp D        &kp C        &kp Z   &kp LSHFT     &kp LCTRL    &layer_td  &kp LGUI  &kp RCTRL    &kp RSHFT     &kp K        &kp Y        &kp O       &kp U       &kp COMMA   &kp PG_UP
 &magic MAG 0 &kp HOME    &kp END     &kp LEFT     &kp RIGHT            &lt MED BSPC  &lt NAV DEL  &kp LALT   &kp RALT  &lt NUM RET  &lt SYM SPACE              &kp UP       &kp DOWN    &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
