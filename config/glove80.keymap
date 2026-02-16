@@ -19,7 +19,7 @@
 #define COL     2
 #define GAMING  3
 #define NUM     4
-#define SYM     5
+#define FUN     5
 #define NAV     6
 #define MED     7
 #define LOWER   8
