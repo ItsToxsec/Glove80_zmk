@@ -211,18 +211,18 @@
 &none  &kp F10       &kp F7       &kp F8        &kp F9        &kp RBRC                                                   &kp LBKT   &kp N7        &kp N8        &kp N9       &kp RBKT       &none
 &none  &ht LGUI F11  &ht LALT F4  &ht LCTRL F5  &ht LSHFT F6  &kp PLUS                                                   &kp EQUAL  &ht RSHFT N4  &ht RCTRL N5  &ht RALT N6  &ht RGUI PLUS  &none
 &none  &kp F12       &kp F1       &kp F2        &kp F3        &kp LALT  &none     &none     &none  &none  &none   &none  &kp BSLH   &kp N1        &kp N2        &kp N3       &kp TILDE      &none
-&none  &none         &none        &none         &none                   &kp LPAR  &kp RPAR  &none  &none  &trans  &none             &none         &kp N0        &none        &none          &none
+&none  &none         &none        &none         &none                   &kp TAB   &none     &none  &none  &trans  &none             &none         &kp N0        &none        &none          &none
             >;
         };
 
         sym_layer {
             bindings = <
-&none  &none      &none      &none      &none                                                                           &none     &none      &none      &none     &none
-&none  &none      &none      &none      &none      &none                                                      &none      &none     &none      &none      &none     &none
-&none  &kp BSLH   &kp SQT    &kp LBKT   &kp LBRC   &kp LPAR                                                   &kp RPAR   &kp RBRC  &kp RBKT   &kp DQT    &kp EQUAL &none
-&none  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                                                     &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &none
-&none  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT &none     &none   &none     &none  &none  &none  &kp CARET  &kp AMPS  &kp ASTRK  &kp MINUS  &kp UNDER &none
-&none  &none      &none      &none      &none                &kp LSHFT &none   &none     &none  &none  &trans            &none     &none      &none      &none     &none
+&none  &none      &none      &none      &none                                                                             &none     &none      &none      &none     &none
+&none  &none      &none      &none      &none      &none                                                       &none      &none     &none      &none      &none     &none
+&none  &kp BSLH   &kp SQT    &kp LBKT   &kp LBRC   &kp LPAR                                                    &kp RPAR   &kp RBRC  &kp RBKT   &kp DQT    &kp EQUAL &none
+&none  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                                                      &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &none
+&none  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT &none     &none    &none     &none  &none  &none  &kp CARET  &kp AMPS  &kp ASTRK  &kp MINUS  &kp UNDER &none
+&none  &none      &none      &none      &none                &kp LSHFT &kp LALT &none     &none  &none  &trans            &none     &none      &none      &none     &none
 
 //&none  &none      &none      &none      &none                                                                             &none     &none      &none      &none     &none
 //&none  &none      &none      &none      &none      &none                                                       &none      &none     &none      &none      &none     &none
@@ -235,13 +235,13 @@
 
         nav_layer {
             bindings = <
-&none  &none  &none  &none  &none                                                                    &none     &none     &none      &none  &none
-&none  &none  &none  &none  &none  &none                                                  &none      &none     &none     &none      &none  &none
-&none  &none  &none  &none  &none  &none                                                  &none      &none     &kp UP    &none      &none  &none
-&none  &none  &none  &none  &none  &kp PG_UP                                              &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&none  &none  &none  &none  &none  &kp HOME   &none  &none  &none  &none  &none  &none    &kp END    &none     &none     &none      &none  &none
-&none  &none  &none  &none  &none             &none  &none  &none  &none  &none  &kp TAB             &none     &none     &none      &none  &none
-            >;
+&none  &none  &none  &none    &none                                                                     &none     &none     &none      &none  &none
+&none  &none  &none  &none    &none   &none                                                  &none      &none     &none     &none      &none  &none
+&none  &none  &none  &none    &none   &none                                                  &none      &none     &kp UP    &none      &none  &none
+&none  &none  &none  &kp LALT &kp TAB &kp PG_UP                                              &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
+&none  &none  &none  &none    &none   &kp HOME   &none  &none  &none  &none  &none  &none    &kp END    &none     &none     &none      &none  &none
+&none  &none  &none  &none    &none              &none  &none  &none  &none  &none  &kp TAB             &none     &none     &none      &none  &none
+            >; 
         };
 
         med_layer {
