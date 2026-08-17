@@ -32,7 +32,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo LOWER>, <&to LOWER>;
+            bindings = <&mo 8>, <&to 8>;
         };
 
         ht: hold_tap {
@@ -110,43 +110,43 @@
         combo_lshft {
             bindings = <&kp LSHFT>;
             key-positions = <50 49>;
-            layers = <0 1 2>;
+            layers = <1 0 2>;
         };
 
         combo_rshft {
             bindings = <&kp RSHFT>;
             key-positions = <60 59>;
-            layers = <0 1 2>;
+            layers = <1 0 2>;
         };
 
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <23 24>;
-            layers = <0 1 2>;
+            layers = <1 0 2>;
         };
 
         kp_dash {
             bindings = <&kp MINUS>;
             key-positions = <31 32>;
-            layers = <0 1 2>;
+            layers = <1 0 2>;
         };
 
         combo_rsuper {
             bindings = <&kp RGUI>;
             key-positions = <62 61>;
-            layers = <0 1 2>;
+            layers = <1 0 2>;
         };
 
         combo_lgui {
             bindings = <&kp LGUI>;
             key-positions = <47 48>;
-            layers = <0 2 1>;
+            layers = <1 2 0>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <70 73>;
-            layers = <0 1 2>;
+            layers = <1 0 2>;
         };
     };
 
@@ -154,6 +154,17 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            bindings = <
+&kp F1      &kp F2      &kp F3      &kp F4       &kp F5                                                                                   &kp F6       &kp F7       &kp F8      &kp F9         &kp F10
+&kp EQUAL   &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                                                              &kp N6  &kp N7       &kp N8       &kp N9      &kp N0         &kp MINUS
+&kp ESC     &kp Q       &kp W       &kp E        &kp R        &kp T                                                               &kp Y   &kp U        &kp I        &kp O       &kp P          &kp BSLH
+&kp TAB     &ht LGUI A  &ht LALT S  &ht LCTRL D  &ht LSHFT F  &kp G                                                               &kp H   &ht RSHFT J  &ht RCTRL K  &ht RALT L  &ht RGUI SEMI  &kp SQT
+&kp GRAVE   &kp Z       &kp X       &kp C        &kp V        &kp B   &kp LSHFT  &kp CAPS  &mo 8     &mo 7    &mo 5    &mo 4      &kp N   &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp PG_UP
+&magic 9 0  &kp HOME    &kp END     &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL   &kp LALT  &kp TAB  &kp RET  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &kp PG_DN
+            >;
+        };
+
+        galmod_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
             // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
@@ -163,45 +174,34 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1        &kp F2      &kp F3      &kp F4       &kp F5                                                                                    &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
-&kp EQUAL     &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                                                               &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
-&kp ESC       &kp Q       &kp X       &kp M        &kp W        &kp V                                                                &kp J   &kp F        &kp FSLH     &kp SEMI    &kp DOT     &kp BSLH
-&kp TAB       &ht LGUI N  &ht LALT R  &ht LCTRL T  &ht LSHFT S  &kp G                                                                &kp P   &ht RSHFT H  &ht RCTRL A  &ht RALT E  &ht LGUI I  &kp SQT
-&kp GRAVE     &kp B       &kp L       &kp D        &kp C        &kp Z   &kp LSHFT  &kp CAPS  &mo LOWER  &mo MED  &mo 5    &mo 4      &kp K   &kp Y        &kp O        &kp U       &kp COMMA   &kp PG_UP
-&magic MAG 0  &kp HOME    &kp END     &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL   &kp LALT   &kp TAB  &kp RET  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
-            >;
-        };
-
-        alt_layer {
-            bindings = <
-&kp F1        &kp F2      &kp F3      &kp F4       &kp F5                                                                                    &kp F6       &kp F7       &kp F8      &kp F9         &kp F10
-&kp EQUAL     &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                                                               &kp N6  &kp N7       &kp N8       &kp N9      &kp N0         &kp MINUS
-&kp ESC       &kp Q       &kp W       &kp E        &kp R        &kp T                                                                &kp Y   &kp U        &kp I        &kp O       &kp P          &kp BSLH
-&kp TAB       &ht LGUI A  &ht LALT S  &ht LCTRL D  &ht LSHFT F  &kp G                                                                &kp H   &ht RSHFT J  &ht RCTRL K  &ht RALT L  &ht RGUI SEMI  &kp SQT
-&kp GRAVE     &kp Z       &kp X       &kp C        &kp V        &kp B   &kp LSHFT  &kp CAPS  &mo LOWER  &mo MED  &mo 5    &mo 4      &kp N   &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp PG_UP
-&magic MAG 0  &kp HOME    &kp END     &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL   &kp LALT   &kp TAB  &kp RET  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT    &kp RBKT       &kp PG_DN
+&kp F1      &kp F2      &kp F3      &kp F4       &kp F5                                                                                   &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
+&kp ESC     &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                                                              &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
+&kp EQUAL   &kp Q       &kp X       &kp M        &kp W        &kp V                                                               &kp J   &kp F        &kp FSLH     &kp SEMI    &kp DOT     &kp BSLH
+&kp TAB     &ht LGUI N  &ht LALT R  &ht LCTRL T  &ht LSHFT S  &kp G                                                               &kp P   &ht RSHFT H  &ht RCTRL A  &ht RALT E  &ht LGUI I  &kp SQT
+&kp GRAVE   &kp B       &kp L       &kp D        &kp C        &kp Z   &kp LSHFT  &kp CAPS  &mo 8     &mo 7    &mo 5    &mo 4      &kp K   &kp Y        &kp O        &kp U       &kp COMMA   &kp PG_UP
+&magic 9 0  &kp HOME    &kp END     &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL   &kp LALT  &kp TAB  &kp RET  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
 
         colemak_layer {
             bindings = <
-&kp F1        &kp F2      &kp F3      &kp F4       &kp F5                                                                                    &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
-&kp EQUAL     &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                                                               &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
-&kp ESC       &kp Q       &kp W       &kp F        &kp P        &kp B                                                                &kp J   &kp L        &kp U        &kp Y       &kp SEMI    &kp BSLH
-&kp TAB       &ht LGUI A  &ht LALT R  &ht LCTRL S  &ht LSHFT T  &kp G                                                                &kp M   &ht RSHFT N  &ht RCTRL E  &ht RALT I  &ht RGUI O  &kp SQT
-&kp GRAVE     &kp Z       &kp X       &kp C        &kp D        &kp V   &kp LSHFT  &kp CAPS  &mo LOWER  &mo MED  &mo 5    &mo 4      &kp K   &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
-&magic MAG 0  &kp HOME    &kp END     &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL   &kp LALT   &kp TAB  &kp RET  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
+&kp F1      &kp F2      &kp F3      &kp F4       &kp F5                                                                                   &kp F6       &kp F7       &kp F8      &kp F9      &kp F10
+&kp EQUAL   &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                                                              &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp MINUS
+&kp ESC     &kp Q       &kp W       &kp F        &kp P        &kp B                                                               &kp J   &kp L        &kp U        &kp Y       &kp SEMI    &kp BSLH
+&kp TAB     &ht LGUI A  &ht LALT R  &ht LCTRL S  &ht LSHFT T  &kp G                                                               &kp M   &ht RSHFT N  &ht RCTRL E  &ht RALT I  &ht RGUI O  &kp SQT
+&kp GRAVE   &kp Z       &kp X       &kp C        &kp D        &kp V   &kp LSHFT  &kp CAPS  &mo 8     &mo 7    &mo 5    &mo 4      &kp K   &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp PG_UP
+&magic 9 0  &kp HOME    &kp END     &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL   &kp LALT  &kp TAB  &kp RET  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
 
         gaming_layer {
             bindings = <
-&kp F1     &kp F2  &kp F3  &kp F4    &kp F5                                                                                            &kp F6       &kp F7       &kp F8   &kp F9     &kp F10
-&kp ESC    &kp N5  &kp N1  &kp N2    &kp N3     &kp N4                                                                         &kp N6  &kp N7       &kp N8       &kp N9   &kp N0     &kp MINUS
-&kp H      &kp T   &kp Q   &kp W     &kp E      &kp R                                                                          &kp Y   &kp U        &kp I        &kp O    &kp P      &kp BSLH
-&kp L      &kp M   &kp A   &kp S     &kp D      &kp F                                                                          &kp H   &ht RSHFT J  &ht RCTRL K  &kp L    &kp SEMI   &kp SQT
-&kp GRAVE  &kp B   &kp Z   &kp X     &kp C      &kp V   &kp LSHFT  &kp TAB    &kp N     &kp LGUI     &kp RCTRL  &kp RSHFT      &kp N   &kp M        &kp COMMA    &kp DOT  &kp FSLH   &kp PG_UP
-&kp TAB    &kp N7  &kp N6  &kp LEFT  &kp RIGHT          &kp SPACE  &kp LCTRL  &kp LALT  &to DEFAULT  &kp RET    &lt FUN SPACE          &kp LEFT     &kp DOWN     &kp UP   &kp RIGHT  &kp PG_DN
+&kp F1     &kp F2  &kp F3  &kp F4    &kp F5                                                                                       &kp F6       &kp F7       &kp F8   &kp F9     &kp F10
+&kp ESC    &kp N5  &kp N1  &kp N2    &kp N3     &kp N4                                                                    &kp N6  &kp N7       &kp N8       &kp N9   &kp N0     &kp MINUS
+&kp H      &kp T   &kp Q   &kp W     &kp E      &kp R                                                                     &kp Y   &kp U        &kp I        &kp O    &kp P      &kp BSLH
+&kp L      &kp M   &kp A   &kp S     &kp D      &kp F                                                                     &kp H   &ht RSHFT J  &ht RCTRL K  &kp L    &kp SEMI   &kp SQT
+&kp GRAVE  &kp B   &kp Z   &kp X     &kp C      &kp V   &kp LSHFT  &kp TAB    &kp N     &kp LGUI  &kp RCTRL  &kp RSHFT    &kp N   &kp M        &kp COMMA    &kp DOT  &kp FSLH   &kp PG_UP
+&kp TAB    &kp N7  &kp N6  &kp LEFT  &kp RIGHT          &kp SPACE  &kp LCTRL  &kp LALT  &to 1     &kp RET    &lt 5 SPACE          &kp LEFT     &kp DOWN     &kp UP   &kp RIGHT  &kp PG_DN
             >;
         };
 
@@ -251,12 +251,12 @@
 
         lower_layer {
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                              &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
-&trans        &none         &none       &none       &none      &kp HOME                                                        &kp LPAR   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
-&trans        &none         &none       &kp UP      &none      &kp END                                                         &kp RPAR   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
-&trans        &none         &kp LEFT    &kp DOWN    &kp RIGHT  &kp PG_UP                                                       &kp PRCNT  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
-&trans        &kp K_CMENU   &none       &kp F11     &kp F12    &kp PG_DN  &trans  &trans  &none       &to COL  &none   &trans  &kp COMMA  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans        &kp CAPS      &kp INS     &kp F11     &kp F12               &trans  &trans  &to GAMING  &to ALT  &trans  &trans             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                       &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
+&trans        &none         &none       &none       &none      &kp HOME                                                 &kp LPAR   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
+&trans        &none         &none       &kp UP      &none      &kp END                                                  &kp RPAR   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
+&trans        &none         &kp LEFT    &kp DOWN    &kp RIGHT  &kp PG_UP                                                &kp PRCNT  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
+&trans        &kp K_CMENU   &none       &kp F11     &kp F12    &kp PG_DN  &trans  &trans  &none  &to 2  &none   &trans  &kp COMMA  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
+&trans        &kp CAPS      &kp INS     &kp F11     &kp F12               &trans  &trans  &to 3  &to 0  &trans  &trans             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
             >;
         };
 
