@@ -157,7 +157,7 @@
 &kp H      &kp T   &kp Q   &kp W     &kp E      &kp R                                                                     &kp Y   &kp U        &kp I            &kp O         &kp P      &kp BSLH
 &kp L      &kp M   &kp A   &kp S     &kp D      &kp F                                                                     &kp H   &kp J        &kp K            &kp L         &kp SEMI   &kp SQT
 &kp GRAVE  &kp B   &kp Z   &kp X     &kp C      &kp V   &kp LSHFT  &kp TAB    &kp N     &kp LGUI  &kp RCTRL  &kp RSHFT    &kp N   &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH   &kp PG_UP
-&kp TAB    &kp N7  &kp N6  &kp LEFT  &kp RIGHT          &kp SPACE  &kp LCTRL  &kp LALT  &to 0     &kp RET    &lt 5 SPACE          &kp LEFT     &kp DOWN         &kp UP        &kp RIGHT  &kp PG_DN
+&kp TAB    &kp N7  &kp N6  &kp LEFT  &kp RIGHT          &kp SPACE  &kp LCTRL  &kp LALT  &to 0     &kp RET    &lt 5 SPACE          &kp UP       &kp DOWN         &kp LEFT      &kp RIGHT  &kp PG_DN
             >;
         };
 
