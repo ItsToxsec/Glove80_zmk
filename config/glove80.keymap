@@ -198,7 +198,7 @@
 &none  &none      &none         &none       &none         &none                                                  &none      &none          &none             &none     &none      &none
 &none  &kp PSCRN  &none         &none       &none         &none                                                  &none      &kp C_AC_BACK  &kp C_AC_FORWARD  &none     &none      &none
 &none  &kp LGUI   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp PG_UP                                              &kp PG_DN  &kp UP         &kp DOWN          &kp LEFT  &kp RIGHT  &none
-&none  &none      &none         &kp LALT    &kp TAB       &kp HOME   &none  &none  &none  &none  &none  &none    &kp END    &kp H          &kp J             &kp K     &kp L      &none
+&none  &none      &kp LALT      &kp LCTRL   &kp TAB       &kp HOME   &none  &none  &none  &none  &none  &none    &kp END    &kp H          &kp J             &kp K     &kp L      &none
 &none  &none      &none         &none       &none                    &none  &none  &none  &none  &none  &kp TAB             &none          &none             &none     &none      &none
             >;
         };
