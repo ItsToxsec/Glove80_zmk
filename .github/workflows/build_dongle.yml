@@ -1,0 +1,49 @@
+name: Build Glove80 XIAO Dongle
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  submodules: recursive
+
+            - uses: actions/checkout@v4
+              with:
+                  repository: moergo-sc/zmk
+                  ref: main
+                  path: src
+
+            - uses: cachix/install-nix-action@v25
+              with:
+                  nix_path: nixpkgs=channel:nixos-22.05
+
+            - uses: cachix/cachix-action@v14
+              with:
+                  name: moergo-glove80-zmk-dev
+                  skipPush: true
+
+            - name: Install Glove80 dongle shield
+              run: |
+                  test -d shields/glove80_dongle
+                  cp -r shields/glove80_dongle src/app/boards/shields/
+
+            - name: Build all firmware
+              run: nix-build config -o result
+
+            - name: Verify firmware outputs
+              run: |
+                  ls -lh result/*.uf2
+                  test -s result/glove80_xiao_dongle.uf2
+                  test -s result/glove80_lh_peripheral.uf2
+                  test -s result/glove80_rh_peripheral.uf2
+
+            - name: Upload firmware
+              uses: actions/upload-artifact@v4
+              with:
+                  name: glove80-xiao-dongle-firmware
+                  path: result/*.uf2
+                  if-no-files-found: error

@@ -1,5 +1,17 @@
 include:
-    - board: nice_nano_v2
+    # Glove80 left and right peripheral firmware
+    - board: glove80_lh
+      artifact-name: glove80_left
+
+    - board: glove80_rh
+      artifact-name: glove80_right
+
+    # Seeed XIAO nRF52840 USB dongle
+    - board: seeeduino_xiao_ble
       shield: glove80_dongle
-    - board: nice_nano_v2
+      artifact-name: glove80_xiao_dongle
+
+    # XIAO settings reset firmware
+    - board: seeeduino_xiao_ble
       shield: settings_reset
+      artifact-name: glove80_xiao_reset
